@@ -1,0 +1,8 @@
+.sectors {
+    @include container($laptop13);
+    margin-top: 70px;
+
+    .wrapper {
+        grid-column: 5/11;
+    }
+}

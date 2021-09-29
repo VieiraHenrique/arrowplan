@@ -1,0 +1,148 @@
+.header {
+  @include container($laptop13);
+  height: 120px;
+  background: $gray-light-1;
+  color: $color-primary-dark;
+  box-shadow: $shadow-light;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999999;
+
+  .wrapper {
+    height: 100%;
+    @include flex(row, space-between, center);
+  }
+
+  &__logo {
+    display: flex;
+    gap: 15px;
+
+    img {
+      width: 60px;
+    }
+
+    &--text {
+      @include flex(column, center, flex-start, 0px);
+      span {
+        display: block;
+      }
+      &-title {
+        font-size: 29px;
+        letter-spacing: 1px;
+
+        @include ipad {
+          font-size: 38px;
+        }
+      }
+
+      &-subtitle {
+        font-size: 15px;
+        color: $color-primary-light;
+        font-family: $font-secondary;
+        letter-spacing: 1px;
+
+        @include ipad {
+          font-size: 19px;
+        }
+      }
+    }
+  }
+
+  &__nav {
+    #toggle {
+      display: none;
+    }
+
+    .hamburger {
+      @include ipadPro {
+        display: none;
+      }
+
+      span,
+      span::before,
+      span::after {
+        @include pseudo;
+        width: 35px;
+        height: 4px;
+        background-color: $color-primary;
+        border-radius: 10px;
+        position: relative;
+        @include transition;
+      }
+
+      span::before,
+      span::after {
+        position: absolute;
+      }
+
+      span::before {
+        top: -9px;
+      }
+
+      span::after {
+        bottom: -9px;
+        width: 25px;
+      }
+    }
+
+    &--menu {
+      background-color: $color-primary;
+      color: $white;
+      width: 100vw;
+      height: calc(100vh - 120px);
+      position: fixed;
+      top: 120px;
+      right: -100vw;
+      @include flex(column, center, center, 30px);
+      @include transition;
+
+      a {
+        color: $white;
+        text-transform: uppercase;
+        font-weight: 400;
+
+        @include ipadPro {
+          color: $color-primary;
+          text-transform: capitalize;
+          position: relative;
+
+          &::after {
+              @include pseudo;
+              width: 0%;
+              height: 2px;
+              background-color: $color-primary;
+              bottom: -5px;
+              @include transition;
+          }
+          
+          &:hover::after {
+              width: 100%;
+          }
+        }
+      }
+
+      @include ipadPro {
+        all: unset;
+        list-style: none;
+        @include flex(row, center, center, 20px);
+      }
+    }
+
+    #toggle:checked ~ &--menu {
+      right: 0;
+    }
+
+    #toggle:checked ~ .hamburger span {
+      transform: rotate(45deg);
+    }
+    #toggle:checked ~ .hamburger span::before {
+      top: 0;
+      transform: rotate(90deg);
+    }
+    #toggle:checked ~ .hamburger span::after {
+      display: none;
+    }
+  }
+}

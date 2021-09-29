@@ -1,0 +1,44 @@
+/* FONTS */
+
+@font-face {
+    font-family: avenir;
+    src: url("/fonts/AvenirLTStd-Black.otf") format("opentype");
+}
+
+@font-face {
+    font-family: avenir-light;
+    src: url("/fonts/AvenirLTStd-Roman.otf") format("opentype");
+}
+
+@font-face {
+    font-family: avenir-bold;
+    src: url("/fonts/AvenirLTStd-Black.otf") format("opentype");
+}
+
+
+@import url("https://fonts.googleapis.com/css2?family=Abel&family=Open+Sans:wght@300;400;500;600&display=swap");
+$font-primary: "avenir-light", sans-serif;
+$font-secondary: "Abel", sans-serif;
+
+/* COLORS */
+
+$white: #fff;
+$black: #232323;
+
+$gray-light-1: #fcfcfc;
+$gray-light-2: #f3f2f2;
+$gray-light-3: #d4d4d4;
+
+$gray-dark-1: #7c7c7c;
+$gray-dark-2: #525252;
+$gray-dark-3: #2f2f2f;
+
+$color-primary: #236eac;
+$color-primary-light: #76aedb;
+$color-primary-dark: #003865;
+
+/* SHADOWS */
+
+$shadow-light: -2px 2px 5px rgba(#000, 0.2);
+$shadow-medium: 0px 7px 20px rgba(#000, 0.2);
+$shadow-dark: 0px 20px 40px rgba(#000, 0.3);
