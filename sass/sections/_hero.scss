@@ -8,7 +8,7 @@
   background-size: contain;
 
   @include laptop13 {
-    background-image: url('/img/world6.png');
+    background-image: url('img/world6.png');
   }
 
   @include laptop {

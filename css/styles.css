@@ -464,7 +464,7 @@ a {
 
 @media screen and (min-width: 1280px) {
   .hero {
-    background-image: url("/img/world6.png");
+    background-image: url("img/world6.png");
   }
 }
 
