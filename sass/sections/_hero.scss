@@ -8,15 +8,15 @@
   background-size: contain;
 
   @include laptop13 {
-    background-image: url('img/world6.png');
+    background-image: url('https://vieirahenrique.github.io/arrowplan/img/world6.png');
   }
 
   @include laptop {
-    background-position: center right -680px;
+    background-position: center right -700px;
   }
 
   @include pc {
-    background-position: center right -450px;
+    background-position: center right -470px;
   }
 
   &__text {

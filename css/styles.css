@@ -196,7 +196,7 @@ a {
   margin-top: 10px;
   background-color: #236eac;
   box-sizing: border-box;
-  border-radius: 5px;
+  border-radius: 10px;
 }
 
 .ac .ac-header {
@@ -238,6 +238,8 @@ a {
 .ac .ac-panel {
   background: #fff;
   box-shadow: -2px 2px 5px rgba(0, 0, 0, 0.2);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
   overflow: hidden;
   transition-property: height, visibility;
   transition-timing-function: ease;
@@ -261,6 +263,17 @@ a {
 
 .ac.is-active > .ac-header .ac-trigger::after {
   content: "\2013";
+}
+
+.message {
+  background: #ffc43a;
+  margin: 50px 0;
+  padding: 30px 0;
+}
+
+.message p {
+  text-align: center;
+  font-weight: 600;
 }
 
 .header {
@@ -464,19 +477,19 @@ a {
 
 @media screen and (min-width: 1280px) {
   .hero {
-    background-image: url("img/world6.png");
+    background-image: url("https://vieirahenrique.github.io/arrowplan/img/world6.png");
   }
 }
 
 @media screen and (min-width: 1440px) {
   .hero {
-    background-position: center right -680px;
+    background-position: center right -700px;
   }
 }
 
 @media screen and (min-width: 1920px) {
   .hero {
-    background-position: center right -450px;
+    background-position: center right -470px;
   }
 }
 
@@ -514,7 +527,7 @@ a {
 .sectors {
   display: grid;
   grid-template-columns: [full-start] minmax(20px, 1fr) [container-start] repeat(12, [col-start] minmax(22px, 106.66667px) [col-end]) [container-end] minmax(20px, 1fr) [full-end];
-  margin-top: 70px;
+  margin-top: 60px;
 }
 
 .sectors > * {

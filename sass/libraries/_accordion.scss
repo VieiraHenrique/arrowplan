@@ -12,7 +12,7 @@
 
   background-color: $color-primary;
   box-sizing: border-box;
-  border-radius: 5px;
+  border-radius: 10px;
 }
 .ac .ac-header {
   margin: 0;
@@ -51,6 +51,8 @@
 .ac .ac-panel {
   background: #fff;
   box-shadow: $shadow-light;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
   
 
   overflow: hidden;
