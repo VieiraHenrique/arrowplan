@@ -36,7 +36,6 @@ html {
 body {
   font-family: "avenir-light", sans-serif;
   overflow-x: hidden;
-  min-height: 150vh;
 }
 
 body::-webkit-scrollbar {
@@ -509,13 +508,19 @@ a {
 
 @media screen and (min-width: 1440px) {
   .hero {
-    background-position: center right -700px;
+    background-position: center right -750px;
   }
 }
 
 @media screen and (min-width: 1920px) {
   .hero {
-    background-position: center right -470px;
+    background-position: center right -570px;
+  }
+}
+
+@media screen and (min-width: 2000px) {
+  .hero {
+    background-position: center right -200px;
   }
 }
 
@@ -570,5 +575,15 @@ a {
   .sectors .wrapper {
     grid-column: 5/11;
   }
+}
+
+.view {
+  display: grid;
+  grid-template-columns: [full-start] minmax(20px, 1fr) [container-start] repeat(12, [col-start] minmax(22px, 106.66667px) [col-end]) [container-end] minmax(20px, 1fr) [full-end];
+}
+
+.view > * {
+  grid-column: container-start / container-end;
+  grid-row: 1;
 }
 /*# sourceMappingURL=styles.css.map */

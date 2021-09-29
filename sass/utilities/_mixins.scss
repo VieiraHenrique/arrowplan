@@ -6,7 +6,7 @@ $ipadPro: 1024px;
 $laptop13: 1280px;
 $laptop: 1440px;
 $pc: 1920px;
-$bigPc: 2560px;
+$bigPc: 2000px;
 
 @mixin ipad() {
   @media screen and (min-width: $ipad) {
