@@ -51,13 +51,13 @@ a {
 }
 
 .lead {
-  font-size: 2em;
+  font-size: 22px;
   color: $color-primary;
   font-family: $font-secondary;
   @include laptop13 {
-    font-size: 20px;
+    font-size: 24px;
   }
   @include laptop {
-    font-size: 22px;
+    font-size: 26px;
   }
 }

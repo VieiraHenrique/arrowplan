@@ -167,20 +167,20 @@ a {
 }
 
 .lead {
-  font-size: 2em;
+  font-size: 22px;
   color: #236eac;
   font-family: "Abel", sans-serif;
 }
 
 @media screen and (min-width: 1280px) {
   .lead {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 
 @media screen and (min-width: 1440px) {
   .lead {
-    font-size: 22px;
+    font-size: 26px;
   }
 }
 
@@ -205,7 +205,7 @@ a {
 }
 
 .ac .ac-trigger {
-  font: 18px Arial, sans-serif;
+  font: 18px "avenir-light", sans-serif, sans-serif;
   color: #fff;
   text-align: left;
   width: 100%;
@@ -268,12 +268,35 @@ a {
 .message {
   background: #ffc43a;
   margin: 50px 0;
-  padding: 30px 0;
+  padding: 45px 0;
 }
 
 .message p {
+  width: fit-content;
   text-align: center;
   font-weight: 600;
+  position: relative;
+  margin: 0 auto;
+  color: #525252;
+}
+
+.message p i {
+  font-size: 22px;
+  color: #525252;
+  transform: translateY(-15px);
+}
+
+.message p span {
+  position: absolute;
+  bottom: -22px;
+  right: 22px;
+  font-size: 13px;
+}
+
+@media screen and (min-width: 1280px) {
+  .message p span {
+    right: -40px;
+  }
 }
 
 .header {
@@ -462,12 +485,13 @@ a {
 .hero {
   display: grid;
   grid-template-columns: [full-start] minmax(20px, 1fr) [container-start] repeat(12, [col-start] minmax(22px, 106.66667px) [col-end]) [container-end] minmax(20px, 1fr) [full-end];
-  padding: 100px 0;
+  padding: 30px 0;
   align-items: center;
   background-image: none;
   background-repeat: no-repeat;
   background-position: center right -600px;
   background-size: contain;
+  text-align: center;
 }
 
 .hero > * {
@@ -477,6 +501,8 @@ a {
 
 @media screen and (min-width: 1280px) {
   .hero {
+    text-align: left;
+    padding: 100px 0;
     background-image: url("https://vieirahenrique.github.io/arrowplan/img/world6.png");
   }
 }
@@ -536,6 +562,13 @@ a {
 }
 
 .sectors .wrapper {
-  grid-column: 5/11;
+  grid-column: 2/-2;
+  text-align: center;
+}
+
+@media screen and (min-width: 1280px) {
+  .sectors .wrapper {
+    grid-column: 5/11;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
