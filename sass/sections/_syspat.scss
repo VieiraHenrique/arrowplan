@@ -2,27 +2,41 @@
   @include container;
   @include separator(0, 0, 100px, 50px);
 
-  .wrapper {
-    grid-column: 2/-2;
-    text-align: center;
+  &__text {
+    grid-column: 1/-1;
+    background: $black;
+    color: $white;
+    padding: 10%;
+    min-height: 60vh;
+    display: grid;
+    place-items: center;
+    text-align: left;
+
+    p {
+      color: $gray-light-1;
+    }
 
     @include ipad {
-      grid-column: 4/12;
+      grid-column: 1/8;
+    }
+
+    a {
+      color: $color-primary-light;
     }
   }
 
-  .videos {
-    @include grid(1fr 1fr 1fr, 30px);
+  &__img {
+    grid-column: 1/-1;
+    grid-row: 2;
+    background-image: url('/img/syspat-bg.png');
+    background-size: cover;
+    background-position: center center;
+
+    @include laptop13 {
+      grid-row: 1;
+      grid-column: 8/-1;
+    }
   }
 
-  iframe {
-    margin-top: 30px;
-    width: 320px;
-    height: 180px;
-  }
-
-  a {
-    color: $color-primary;
-    text-decoration: underline;
-  }
+  
 }

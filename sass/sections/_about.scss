@@ -1,0 +1,7 @@
+.about {
+    @include grid(1fr 1fr);
+
+    .left {
+        background: $black;
+    }
+}
