@@ -9,6 +9,11 @@
         
         @include laptop13 {
             grid-column: 5/11;
+            
+        }
+        
+        @include pc {
+            grid-column: 4/12;
 
         }
     }

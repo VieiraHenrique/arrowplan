@@ -183,6 +183,10 @@ a {
   }
 }
 
+.center {
+  text-align: center;
+}
+
 /*!
  * Accordion v3.1.1
  * Simple accordion created in pure Javascript.
@@ -236,7 +240,7 @@ a {
 
 .ac .ac-panel {
   background: #fff;
-  box-shadow: -2px 2px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.2);
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
   overflow: hidden;
@@ -245,7 +249,7 @@ a {
 }
 
 .ac .ac-panel .ac-text {
-  font: 15px/24px Arial, sans-serif;
+  font: 17px/24px Arial, sans-serif;
   color: #111;
   padding: 10px;
   margin: 0;
@@ -266,8 +270,15 @@ a {
 
 .message {
   background: #ffc43a;
+  display: grid;
+  grid-template-columns: [full-start] minmax(20px, 1fr) [container-start] repeat(12, [col-start] minmax(22px, 85.33333px) [col-end]) [container-end] minmax(20px, 1fr) [full-end];
   margin: 50px 0;
   padding: 45px 0;
+}
+
+.message > * {
+  grid-column: container-start / container-end;
+  grid-row: 1;
 }
 
 .message p {
@@ -304,7 +315,7 @@ a {
   height: 120px;
   background: #fcfcfc;
   color: #003865;
-  box-shadow: -2px 2px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.2);
   position: fixed;
   top: 0;
   left: 0;
@@ -488,7 +499,6 @@ a {
   align-items: center;
   background-image: none;
   background-repeat: no-repeat;
-  background-position: center right -600px;
   background-size: contain;
   text-align: center;
 }
@@ -500,6 +510,7 @@ a {
 
 @media screen and (min-width: 1280px) {
   .hero {
+    background-position: center right -550px;
     text-align: left;
     padding: 100px 0;
     background-image: url("https://vieirahenrique.github.io/arrowplan/img/world6.png");
@@ -508,7 +519,7 @@ a {
 
 @media screen and (min-width: 1440px) {
   .hero {
-    background-position: center right -750px;
+    background-position: center right -700px;
   }
 }
 
@@ -520,7 +531,7 @@ a {
 
 @media screen and (min-width: 2000px) {
   .hero {
-    background-position: center right -200px;
+    background-position: center right -250px;
   }
 }
 
@@ -575,6 +586,62 @@ a {
   .sectors .wrapper {
     grid-column: 5/11;
   }
+}
+
+@media screen and (min-width: 1920px) {
+  .sectors .wrapper {
+    grid-column: 4/12;
+  }
+}
+
+.syspat {
+  display: grid;
+  grid-template-columns: [full-start] minmax(20px, 1fr) [container-start] repeat(12, [col-start] minmax(22px, 120px) [col-end]) [container-end] minmax(20px, 1fr) [full-end];
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+
+.syspat > * {
+  grid-column: container-start / container-end;
+  grid-row: 1;
+}
+
+.syspat .wrapper {
+  grid-column: 2/-2;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .syspat .wrapper {
+    grid-column: 4/12;
+  }
+}
+
+.syspat iframe {
+  margin-top: 30px;
+  width: 320px;
+  height: 180px;
+}
+
+@media screen and (min-width: 768px) {
+  .syspat iframe {
+    width: 480px;
+    height: 270px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .syspat iframe {
+    width: 720px;
+    height: 450px;
+  }
+}
+
+.syspat a {
+  color: #236eac;
+  text-decoration: underline;
 }
 
 .view {
