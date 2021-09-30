@@ -167,6 +167,7 @@ a {
 
 .lead {
   font-size: 22px;
+  line-height: 1.1;
   color: #236eac;
   font-family: "Abel", sans-serif;
 }
@@ -270,6 +271,7 @@ a {
 
 .message {
   background: #ffc43a;
+  background: #000;
   display: grid;
   grid-template-columns: [full-start] minmax(20px, 1fr) [container-start] repeat(12, [col-start] minmax(22px, 85.33333px) [col-end]) [container-end] minmax(20px, 1fr) [full-end];
   margin: 50px 0;
@@ -282,17 +284,17 @@ a {
 }
 
 .message p {
+  color: #525252;
+  color: #fff;
   width: fit-content;
   text-align: center;
   font-weight: 600;
   position: relative;
   margin: 0 auto;
-  color: #525252;
 }
 
 .message p i {
   font-size: 22px;
-  color: #525252;
   transform: translateY(-15px);
 }
 
@@ -619,24 +621,17 @@ a {
   }
 }
 
+.syspat .videos {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 30px;
+  row-gap: 0;
+}
+
 .syspat iframe {
   margin-top: 30px;
   width: 320px;
   height: 180px;
-}
-
-@media screen and (min-width: 768px) {
-  .syspat iframe {
-    width: 480px;
-    height: 270px;
-  }
-}
-
-@media screen and (min-width: 1280px) {
-  .syspat iframe {
-    width: 720px;
-    height: 450px;
-  }
 }
 
 .syspat a {

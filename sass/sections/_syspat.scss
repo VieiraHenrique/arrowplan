@@ -11,20 +11,14 @@
     }
   }
 
+  .videos {
+    @include grid(1fr 1fr 1fr, 30px);
+  }
+
   iframe {
     margin-top: 30px;
     width: 320px;
     height: 180px;
-
-    @include ipad {
-      width: 480px;
-      height: 270px;
-    }
-
-    @include laptop13 {
-      width: 720px;
-      height: 450px;
-    }
   }
 
   a {

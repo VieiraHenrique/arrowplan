@@ -52,6 +52,7 @@ a {
 
 .lead {
   font-size: 22px;
+  line-height: 1.1;
   color: $color-primary;
   font-family: $font-secondary;
   @include laptop13 {
