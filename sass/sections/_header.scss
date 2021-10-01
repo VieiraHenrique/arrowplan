@@ -123,6 +123,23 @@
         }
       }
 
+      .cloud {
+        background: $color-primary;
+        padding: 12px 12px 8px;
+        color: $white;
+        line-height: 1;
+        border-radius: 5px;
+        @include transition;
+
+        &:hover {
+          background: $color-primary-light;
+        }
+
+        &:hover::after {
+          display: none;
+        }
+      }
+
       @include ipadPro {
         all: unset;
         list-style: none;

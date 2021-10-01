@@ -1,12 +1,10 @@
 .message {
-  background: $color-secondary;
   background: $black;
   @include container($ipadPro);
   margin: 50px 0;
   padding: 35px 0;
 
   p {
-    color: $gray-dark-2;
     color: $white;
     i {
       font-size: 22px;
