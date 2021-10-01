@@ -198,7 +198,7 @@ a {
  */
 .ac {
   margin-top: 10px;
-  background-color: #236eac;
+  background-color: #f3f2f2;
   box-sizing: border-box;
   border-radius: 5px;
 }
@@ -210,7 +210,7 @@ a {
 
 .ac .ac-trigger {
   font: 18px "avenir-light", sans-serif, sans-serif;
-  color: #fff;
+  color: #000;
   text-align: left;
   width: 100%;
   padding: 10px 30px 10px 10px;
@@ -241,7 +241,7 @@ a {
 
 .ac .ac-panel {
   background: #fff;
-  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.2);
+  /* box-shadow: $shadow-light; */
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
   overflow: hidden;
@@ -251,7 +251,7 @@ a {
 
 .ac .ac-panel .ac-text {
   font: 17px/24px Arial, sans-serif;
-  color: #111;
+  color: #7c7c7c;
   padding: 10px;
   margin: 0;
   padding: 20px;
@@ -270,7 +270,7 @@ a {
 }
 
 .message {
-  background: #ffc43a;
+  background: #ffb339;
   background: #000;
   display: grid;
   grid-template-columns: [full-start] minmax(20px, 1fr) [container-start] repeat(12, [col-start] minmax(22px, 85.33333px) [col-end]) [container-end] minmax(20px, 1fr) [full-end];
@@ -316,7 +316,7 @@ a {
   grid-template-columns: [full-start] minmax(20px, 1fr) [container-start] repeat(12, [col-start] minmax(22px, 106.66667px) [col-end]) [container-end] minmax(20px, 1fr) [full-end];
   height: 120px;
   background: #fcfcfc;
-  color: #003865;
+  color: #15568b;
   box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.2);
   position: fixed;
   top: 0;
@@ -599,10 +599,13 @@ a {
 .syspat {
   display: grid;
   grid-template-columns: [full-start] minmax(20px, 1fr) [container-start] repeat(12, [col-start] minmax(22px, 120px) [col-end]) [container-end] minmax(20px, 1fr) [full-end];
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-top: 100px;
-  padding-bottom: 50px;
+  margin-top: 70px;
+  margin-bottom: 70px;
+  padding-top: 0;
+  padding-bottom: 0;
+  background-image: linear-gradient(to right, #236eac, #236eac), url("https://vieirahenrique.github.io/arrowplan/img/bg2.jpg");
+  background-size: cover;
+  background-position: center center;
 }
 
 .syspat > * {
@@ -610,44 +613,47 @@ a {
   grid-row: 1;
 }
 
+@media screen and (min-width: 1280px) {
+  .syspat {
+    background-image: linear-gradient(to right, #236eac, rgba(35, 110, 172, 0.5)), url("https://vieirahenrique.github.io/arrowplan/img/bg2.jpg");
+  }
+}
+
 .syspat__text {
   grid-column: 1/-1;
-  background: #000;
   color: #fff;
+  min-height: 50vh;
   padding: 10%;
-  min-height: 60vh;
   display: grid;
   place-items: center;
   text-align: left;
 }
 
+.syspat__text span {
+  color: #ffb339;
+}
+
+.syspat__text h2 {
+  font-size: 60px;
+  line-height: 1.1;
+}
+
 .syspat__text p {
-  color: #fcfcfc;
+  color: #f3f2f2;
 }
 
 @media screen and (min-width: 768px) {
   .syspat__text {
-    grid-column: 1/8;
+    grid-column: 1/10;
   }
 }
 
 .syspat__text a {
-  color: #76aedb;
+  color: #ffb339;
 }
 
-.syspat__img {
-  grid-column: 1/-1;
-  grid-row: 2;
-  background-image: url("https://vieirahenrique.github.io/arrowplan/img/syspat-bg.png");
-  background-size: cover;
-  background-position: center center;
-}
-
-@media screen and (min-width: 1280px) {
-  .syspat__img {
-    grid-row: 1;
-    grid-column: 8/-1;
-  }
+.syspat__text a:hover {
+  color: #ffc76c;
 }
 
 .about {

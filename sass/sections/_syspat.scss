@@ -1,42 +1,54 @@
 .syspat {
   @include container;
-  @include separator(0, 0, 100px, 50px);
-
-  &__text {
-    grid-column: 1/-1;
-    background: $black;
-    color: $white;
-    padding: 10%;
-    min-height: 60vh;
-    display: grid;
-    place-items: center;
-    text-align: left;
-
-    p {
-      color: $gray-light-1;
-    }
-
-    @include ipad {
-      grid-column: 1/8;
-    }
-
-    a {
-      color: $color-primary-light;
-    }
-  }
-
-  &__img {
-    grid-column: 1/-1;
-    grid-row: 2;
-    background-image: url('https://vieirahenrique.github.io/arrowplan/img/syspat-bg.png');
+  @include separator(70px, 70px, 0, 0);
+  background-image: linear-gradient( to right,
+      rgba($color-primary, 1),
+      rgba($color-primary, 1)
+    ),
+    url("https://vieirahenrique.github.io/arrowplan/img/bg2.jpg");
     background-size: cover;
     background-position: center center;
 
     @include laptop13 {
-      grid-row: 1;
-      grid-column: 8/-1;
+      background-image: linear-gradient( to right,
+      rgba($color-primary, 1),
+      rgba($color-primary, 0.5)
+    ),
+    url("https://vieirahenrique.github.io/arrowplan/img/bg2.jpg");
+    }
+
+  &__text {
+    grid-column: 1/-1;
+    color: $white;
+    min-height: 50vh;
+    padding: 10%;
+    display: grid;
+    place-items: center;
+    text-align: left;
+
+    span {
+      color: $color-secondary;
+    }
+
+    h2 {
+      font-size: 60px;
+      line-height: 1.1;
+    }
+
+    p {
+      color: $gray-light-2;
+    }
+
+    @include ipad {
+      grid-column: 1/10;
+    }
+
+    a {
+      color: $color-secondary;
+
+      &:hover {
+        color: lighten($color-secondary, 10%);
+      }
     }
   }
-
-  
 }

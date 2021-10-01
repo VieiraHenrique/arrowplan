@@ -10,7 +10,7 @@
 .ac {
   margin-top: 10px;
 
-  background-color: $color-primary;
+  background-color: $gray-light-2;
   box-sizing: border-box;
   border-radius: 5px;
 }
@@ -20,7 +20,7 @@
 }
 .ac .ac-trigger {
   font: 18px $font-primary, sans-serif;
-  color: #fff;
+  color: $black;
   text-align: left;
   width: 100%;
   padding: 10px 30px 10px 10px;
@@ -50,7 +50,7 @@
 }
 .ac .ac-panel {
   background: #fff;
-  box-shadow: $shadow-light;
+  /* box-shadow: $shadow-light; */
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
   
@@ -63,7 +63,7 @@
 }
 .ac .ac-panel .ac-text {
   font: 17px/24px Arial, sans-serif;
-  color: #111;
+  color:  $gray-dark-1;
   padding: 10px;
   margin: 0;
   padding: 20px;
