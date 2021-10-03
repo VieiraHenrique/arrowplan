@@ -1,12 +1,15 @@
 .services {
   @include container($laptop13);
   @include separator(0, 0, 60px, 60px);
-
   background: $gray-light-1;
 
   &__text {
-    grid-column: 1/-1;
+    grid-column: 2/-2;
     text-align: center;
+
+    p {
+      text-align: center;
+    }
 
     @include laptop13 {
       grid-column: 5/11;

@@ -1,0 +1,41 @@
+.press {
+  @include container($laptop13);
+
+  .bg {
+    height: 100%;
+    background: $color-primary;
+    grid-column: 1/6;
+
+    @include laptop13 {
+      background-image: url("/img/3x/dot5@3x.png");
+      background-repeat: no-repeat;
+      background-position: center left;
+    }
+  }
+
+  &__title {
+    padding: 100px 0;
+    grid-column: 2/5;
+    color: $white;
+
+    p {
+      color: $gray-light-1;
+    }
+  }
+
+  &__col1 {
+    padding: 100px 0;
+    grid-column: 7/9;
+  }
+
+  &__col2 {
+    padding: 100px 0;
+    grid-column: 10/-2;
+  }
+
+  .item {
+    @include flex(row, flex-start, center, 10px);
+    color: $color-primary;
+    margin-bottom: 25px;
+  }
+}

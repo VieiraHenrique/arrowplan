@@ -2,11 +2,11 @@
   @include container($laptop13);
   background-size: cover;
   background-repeat: no-repeat;
-  padding-bottom: 150px;
 
   @include laptop13 {
     background-image: url("https://vieirahenrique.github.io/arrowplan/img/world6.png");
     background-position: top left -1100px;
+    padding-bottom: 150px;
   }
 
   @include laptop {

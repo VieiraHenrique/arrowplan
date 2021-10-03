@@ -109,22 +109,22 @@
           position: relative;
 
           &::after {
-              @include pseudo;
-              width: 0%;
-              height: 2px;
-              background-color: $color-primary;
-              bottom: -5px;
-              @include transition;
+            @include pseudo;
+            width: 0%;
+            height: 2px;
+            background-color: $color-primary;
+            bottom: -5px;
+            @include transition;
           }
-          
+
           &:hover::after {
-              width: 100%;
+            width: 100%;
           }
         }
       }
 
       .cloud {
-        background: $color-primary;
+        background: $color-primary-dark;
         padding: 12px 12px 8px;
         color: $white;
         line-height: 1;
@@ -132,7 +132,7 @@
         @include transition;
 
         &:hover {
-          background: $color-primary-light;
+          background: $color-primary;
         }
 
         &:hover::after {
