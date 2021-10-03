@@ -1,7 +1,7 @@
 .header {
   @include container($laptop13);
   height: 120px;
-  background: $gray-light-1;
+  background: $white;
   color: $color-primary-dark;
   box-shadow: $shadow-light;
   position: fixed;
@@ -41,7 +41,7 @@
         font-size: 15px;
         color: $color-primary-light;
         font-family: $font-secondary;
-        letter-spacing: 1px;
+        letter-spacing: 2px;
 
         @include ipad {
           font-size: 19px;

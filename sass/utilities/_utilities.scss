@@ -1,3 +1,19 @@
 .center {
     text-align: center;
 }
+
+.btn {
+    display: inline-block;
+    margin: 10px 0;
+    background: $color-primary-dark;
+    color: $white;
+    padding: 10px 15px;
+    box-shadow: $shadow-medium;
+    @include transition;
+    border-radius: 5px;
+
+    &:hover {
+        background: $color-primary;
+        color: $white;
+    }
+}

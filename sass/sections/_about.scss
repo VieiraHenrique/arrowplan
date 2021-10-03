@@ -1,7 +1,35 @@
 .about {
-    @include grid(1fr 1fr);
+  @include container($laptop13);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-bottom: 150px;
 
-    .left {
-        background: $black;
+  @include laptop13 {
+    background-image: url("https://vieirahenrique.github.io/arrowplan/img/world6.png");
+    background-position: top left -1100px;
+  }
+
+  @include laptop {
+    background-position: top left -1250px;
+  }
+  @include pc {
+    background-position: top left -1030px;
+  }
+  @include bigPc {
+    background-position: top left -1350px;
+  }
+
+  &__text {
+    grid-column: 2/-2;
+    min-height: 500px;
+
+    @include laptop13 {
+      grid-column: 8/-2;
     }
+
+    h3 {
+      color: $color-primary;
+      margin-top: 30px;
+    }
+  }
 }

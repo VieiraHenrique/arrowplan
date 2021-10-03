@@ -26,29 +26,22 @@
     place-items: center;
     text-align: left;
 
-    span {
-      color: $color-secondary;
+    h2 {
+      color: $white;
     }
 
-    h2 {
-      font-size: 60px;
+    h3 {
       line-height: 1.1;
+      color: $gray-light-1;
+      font-size: 30px;
     }
 
     p {
-      color: $gray-light-2;
+      color: $gray-light-1;
     }
 
     @include ipad {
-      grid-column: 1/10;
-    }
-
-    a {
-      color: $color-secondary;
-
-      &:hover {
-        color: lighten($color-secondary, 10%);
-      }
+      grid-column: 1/9;
     }
   }
 }
