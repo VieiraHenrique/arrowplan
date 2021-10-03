@@ -717,14 +717,14 @@ a {
 @media screen and (min-width: 1280px) {
   .about {
     background-image: url("https://vieirahenrique.github.io/arrowplan/img/world6.png");
-    background-position: top left -1100px;
+    background-position: top left -800px;
     padding-bottom: 150px;
   }
 }
 
 @media screen and (min-width: 1440px) {
   .about {
-    background-position: top left -1250px;
+    background-position: top left -900px;
   }
 }
 
