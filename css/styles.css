@@ -804,7 +804,7 @@ a {
 
 @media screen and (min-width: 1280px) {
   .press .bg {
-    background-image: url("/img/3x/dot5@3x.png");
+    background-image: url("https://vieirahenrique.github.io/arrowplan/img/3x/dot5@3x.png");
     background-repeat: no-repeat;
     background-position: center left;
   }
