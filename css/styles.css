@@ -226,6 +226,20 @@ a {
   margin-top: 40px;
 }
 
+.noscroll {
+  overflow: hidden;
+}
+
+#syspat, #about, #services, #press, #contact {
+  position: relative;
+  top: -120px;
+}
+
+#about {
+  position: relative;
+  top: -200px;
+}
+
 /*!
  * Accordion v3.1.1
  * Simple accordion created in pure Javascript.
@@ -236,7 +250,7 @@ a {
  */
 .ac {
   margin-top: 10px;
-  background-color: #f0f0f0;
+  background-color: #f3f3f3;
   box-sizing: border-box;
   border-radius: 5px;
 }
@@ -688,7 +702,7 @@ a {
 
 .syspat__text h3 {
   line-height: 1.1;
-  color: #f0f0f0;
+  color: #f3f3f3;
   font-size: 30px;
 }
 
@@ -717,26 +731,29 @@ a {
 @media screen and (min-width: 1280px) {
   .about {
     background-image: url("https://vieirahenrique.github.io/arrowplan/img/world6.png");
-    background-position: top left -800px;
-    padding-bottom: 150px;
+    background-position: top 60px left -900px;
+    background-size: 1450px;
+    padding-bottom: 80px;
   }
 }
 
 @media screen and (min-width: 1440px) {
   .about {
-    background-position: top left -900px;
+    background-size: 1550px;
+    background-position: top 60px left -870px;
   }
 }
 
 @media screen and (min-width: 1920px) {
   .about {
-    background-position: top left -1030px;
+    background-position: top 100px left -800px;
+    background-size: 1650px;
   }
 }
 
 @media screen and (min-width: 2000px) {
   .about {
-    background-position: top left -1350px;
+    background-position: top 120px left -450px;
   }
 }
 
@@ -763,7 +780,7 @@ a {
   margin-bottom: 0;
   padding-top: 60px;
   padding-bottom: 60px;
-  background: #f0f0f0;
+  background: #f3f3f3;
 }
 
 .services > * {
@@ -799,7 +816,7 @@ a {
 .press .bg {
   height: 100%;
   background: #236eac;
-  grid-column: 1/6;
+  grid-column: 1/-1;
 }
 
 @media screen and (min-width: 1280px) {
@@ -810,24 +827,55 @@ a {
   }
 }
 
+@media screen and (min-width: 1280px) {
+  .press .bg {
+    grid-column: 1/6;
+  }
+}
+
 .press__title {
-  padding: 100px 0;
-  grid-column: 2/5;
+  grid-column: 2/-2;
   color: #fff;
+  padding: 50px 0;
 }
 
 .press__title p {
-  color: #f0f0f0;
+  color: #f3f3f3;
+}
+
+@media screen and (min-width: 1280px) {
+  .press__title {
+    padding: 100px 0;
+    grid-column: 2/5;
+  }
 }
 
 .press__col1 {
-  padding: 100px 0;
-  grid-column: 7/9;
+  grid-column: 2/-2;
+  grid-row: 2;
+  padding: 20px 0;
+}
+
+@media screen and (min-width: 1280px) {
+  .press__col1 {
+    padding: 100px 0;
+    grid-column: 7/9;
+    grid-row: 1;
+  }
 }
 
 .press__col2 {
-  padding: 100px 0;
-  grid-column: 10/-2;
+  grid-column: 2/-2;
+  grid-row: 3;
+  padding: 20px 0;
+}
+
+@media screen and (min-width: 1280px) {
+  .press__col2 {
+    padding: 100px 0;
+    grid-column: 10/-2;
+    grid-row: 1;
+  }
 }
 
 .press .item {
@@ -838,5 +886,100 @@ a {
   gap: 10px;
   color: #236eac;
   margin-bottom: 25px;
+}
+
+.contact {
+  display: grid;
+  grid-template-columns: [full-start] minmax(20px, 1fr) [container-start] repeat(12, [col-start] minmax(22px, 106.66667px) [col-end]) [container-end] minmax(20px, 1fr) [full-end];
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background: #f3f3f3;
+  background-image: url("/img/3x/dot3@3x.png");
+  background-repeat: no-repeat;
+  background-position: center right;
+}
+
+.contact > * {
+  grid-column: container-start / container-end;
+  grid-row: 1;
+}
+
+.contact .wrapper {
+  grid-column: 2/-2;
+  text-align: center;
+}
+
+@media screen and (min-width: 1280px) {
+  .contact .wrapper {
+    grid-column: 5/-5;
+  }
+}
+
+.contact .wrapper p {
+  text-align: center;
+}
+
+.contact .wrapper form input, .contact .wrapper form textarea {
+  display: block;
+  border-radius: 5px;
+  margin: 0 auto;
+  width: 100%;
+  font-family: avenir-light, sans-serif;
+  margin-bottom: 10px;
+  font-size: 15px;
+  box-shadow: 3px 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.contact .wrapper form textarea {
+  line-height: 1.6;
+}
+
+.contact .wrapper form input::placeholder, .contact .wrapper form textarea::placeholder {
+  color: #7c7c7c;
+}
+
+.contact .wrapper form button {
+  font-size: avenir-light, sans-serif;
+  cursor: pointer;
+  margin-top: 15px;
+  font-size: 15px;
+  background: #15568b;
+  border-radius: 5px;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  outline: none;
+  width: 100%;
+  box-shadow: 0px 7px 20px rgba(0, 0, 0, 0.2);
+  transition: 0.4s ease;
+}
+
+.contact .wrapper form button:hover {
+  background: #236eac;
+}
+
+.links {
+  display: grid;
+  grid-template-columns: [full-start] minmax(20px, 1fr) [container-start] repeat(12, [col-start] minmax(22px, 106.66667px) [col-end]) [container-end] minmax(20px, 1fr) [full-end];
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.links > * {
+  grid-column: container-start / container-end;
+  grid-row: 1;
+}
+
+.links .wrapper {
+  grid-column: 2/-2;
+  text-align: center;
+}
+
+.links .wrapper p {
+  text-align: center;
 }
 /*# sourceMappingURL=styles.css.map */

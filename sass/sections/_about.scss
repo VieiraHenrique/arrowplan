@@ -5,18 +5,21 @@
 
   @include laptop13 {
     background-image: url("https://vieirahenrique.github.io/arrowplan/img/world6.png");
-    background-position: top left -800px;
-    padding-bottom: 150px;
+    background-position: top 60px left -900px;
+    background-size: 1450px;
+    padding-bottom: 80px;
   }
 
   @include laptop {
-    background-position: top left -900px;
+    background-size: 1550px;
+    background-position: top 60px left -870px;
   }
   @include pc {
-    background-position: top left -1030px;
+    background-position: top 100px left -800px;
+    background-size: 1650px;
   }
   @include bigPc {
-    background-position: top left -1350px;
+    background-position: top 120px left -450px;
   }
 
   &__text {

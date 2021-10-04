@@ -1,0 +1,14 @@
+.links {
+    @include container($laptop13);
+    @include separator(50px,50px,0,0);
+    .wrapper {
+        grid-column: 2/-2;
+        text-align: center;
+
+        p {
+            text-align: center;
+        }
+    }
+
+    
+}
