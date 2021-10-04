@@ -230,7 +230,7 @@ a {
   overflow: hidden;
 }
 
-#syspat, #about, #services, #press, #contact, #link {
+#syspat, #about, #services, #press, #contact, #links {
   position: relative;
   top: -120px;
 }
@@ -950,7 +950,7 @@ a {
   background: #15568b;
   border-radius: 5px;
   color: #fff;
-  padding: 10px 15px;
+  padding: 15px 0;
   border: none;
   outline: none;
   width: 100%;
