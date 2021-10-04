@@ -230,7 +230,7 @@ a {
   overflow: hidden;
 }
 
-#syspat, #about, #services, #press, #contact {
+#syspat, #about, #services, #press, #contact, #link {
   position: relative;
   top: -120px;
 }
@@ -921,7 +921,8 @@ a {
   text-align: center;
 }
 
-.contact .wrapper form input, .contact .wrapper form textarea {
+.contact .wrapper form input,
+.contact .wrapper form textarea {
   display: block;
   border-radius: 5px;
   margin: 0 auto;
@@ -936,7 +937,8 @@ a {
   line-height: 1.6;
 }
 
-.contact .wrapper form input::placeholder, .contact .wrapper form textarea::placeholder {
+.contact .wrapper form input::placeholder,
+.contact .wrapper form textarea::placeholder {
   color: #7c7c7c;
 }
 
