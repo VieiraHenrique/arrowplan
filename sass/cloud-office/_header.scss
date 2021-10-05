@@ -1,0 +1,70 @@
+.header {
+  @include container;
+  background: $white;
+  height: 120px;
+  background: $white;
+  color: $color-primary-dark;
+  box-shadow: $shadow-light;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999999;
+
+  .wrapper {
+    height: 100%;
+    @include flex(row, space-between, center);
+  }
+
+  &__logo {
+    display: flex;
+    gap: 15px;
+
+    img {
+      width: 60px;
+    }
+
+    &--text {
+      @include flex(column, center, flex-start, 0px);
+      span {
+        display: block;
+      }
+      &-title {
+        font-size: 29px;
+        letter-spacing: 1px;
+
+        @include ipad {
+          font-size: 38px;
+        }
+      }
+
+      &-subtitle {
+        font-size: 15px;
+        color: $color-primary-light;
+        font-family: $font-secondary;
+        letter-spacing: 2px;
+
+        @include ipad {
+          font-size: 19px;
+        }
+      }
+    }
+  }
+
+  &__menu {
+    a {
+      color: $color-primary-dark;
+      
+      i {
+        @include transition;
+        margin-right: 2px;
+      }
+      
+      &:hover {
+        i {
+          transform: translateX(-5px);
+        }
+      }
+    }
+  }
+}
