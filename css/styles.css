@@ -1109,6 +1109,7 @@ a {
 }
 
 .footer__logo h3 {
+  font-family: avenir-light, sans-serif;
   color: #fff;
   font-size: 25px;
   margin: 0;
