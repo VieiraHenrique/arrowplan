@@ -1248,20 +1248,39 @@ a {
 }
 
 .main__cover {
+  display: none;
   grid-column: 1/7;
   min-height: calc(100vh - 120px);
   background: url("/img/bg.png");
 }
 
+@media screen and (min-width: 1280px) {
+  .main__cover {
+    display: block;
+  }
+}
+
 .main__offices {
-  padding: 60px;
-  grid-column: 7/-2;
+  padding: 20px;
+  grid-column: 2/-2;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   column-gap: 0;
   row-gap: 0;
   gap: 50px;
   height: fit-content;
+}
+
+@media screen and (min-width: 1280px) {
+  .main__offices {
+    padding: 60px;
+    grid-column: 7/-2;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 0;
+    row-gap: 0;
+    gap: 50px;
+  }
 }
 
 .main__offices .room {
