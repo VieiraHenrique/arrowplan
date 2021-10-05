@@ -1038,14 +1038,30 @@ a {
   font-size: 27px;
 }
 
+.links .note {
+  grid-row: 4;
+  grid-column: 2/-2;
+}
+
+@media screen and (min-width: 1280px) {
+  .links .note {
+    grid-row: 3;
+    grid-column: 4/8;
+  }
+}
+
+.links .note p {
+  font-size: 12px;
+}
+
 .footer {
   display: grid;
   grid-template-columns: [full-start] minmax(20px, 1fr) [container-start] repeat(12, [col-start] minmax(22px, 85.33333px) [col-end]) [container-end] minmax(20px, 1fr) [full-end];
   margin-top: 70px;
   margin-bottom: 0;
   padding-top: 50px;
-  padding-bottom: 50px;
-  background: #15568b;
+  padding-bottom: 0;
+  background: #236eac;
 }
 
 .footer > * {
@@ -1053,43 +1069,61 @@ a {
   grid-row: 1;
 }
 
-.footer .col1 {
-  grid-column: 3/4;
+.footer .wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 50px;
+  text-align: center;
+  padding-bottom: 30px;
 }
 
-.footer .col2 {
-  grid-column: 5/6;
+@media screen and (min-width: 1280px) {
+  .footer .wrapper {
+    flex-direction: row;
+    align-items: flex-start;
+    text-align: left;
+  }
 }
 
-.footer .col3 {
-  grid-column: 7/9;
+.footer h3 {
+  color: #fff;
+  font-size: 18px;
+  margin-bottom: 15px;
 }
 
-.footer .col4 {
-  grid-column: 9/11;
-}
-
-.footer .col5 {
-  grid-column: 12/13;
-}
-
-.footer .col5 div {
+.footer__logo > div {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   gap: 10px;
+  text-align: left;
 }
 
-.footer .col5 h3 {
+@media screen and (min-width: 1280px) {
+  .footer__logo {
+    margin-left: auto;
+  }
+}
+
+.footer__logo h3 {
   color: #fff;
+  font-size: 25px;
+  margin: 0;
+}
+
+.footer__logo p {
+  color: #dadada;
+  margin: 0;
 }
 
 .footer a {
   font-family: avenir-light, sans-serif;
   display: block;
   color: #dadada;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
   font-size: 14px;
   transition: 0.4s ease;
 }
@@ -1100,5 +1134,18 @@ a {
 
 .footer img {
   width: 50px;
+}
+
+.footer__bottom {
+  padding: 5px 0;
+  background: #000;
+  grid-column: 1/-1;
+  grid-row: 2;
+}
+
+.footer__bottom p {
+  color: #dadada;
+  text-align: center;
+  font-size: 13px;
 }
 /*# sourceMappingURL=styles.css.map */

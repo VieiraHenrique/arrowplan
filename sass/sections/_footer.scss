@@ -1,33 +1,45 @@
 .footer {
   @include container($ipadPro);
-  @include separator(70px, 0, 50px, 50px);
-  background: $color-primary-dark;
+  @include separator(70px, 0, 50px, 0);
+  background: $color-primary;
 
-  .col1 {
-    grid-column: 3/4;
+  .wrapper {
+    @include flex(column, flex-start, center, 50px);
+    text-align: center;
+    padding-bottom: 30px;
+
+    @include laptop13 {
+      flex-direction: row;
+      align-items: flex-start;
+      text-align: left;
+    }
   }
 
-  .col2 {
-    grid-column: 5/6;
+  h3 {
+    color: $white;
+    font-size: 18px;
+    margin-bottom: 15px;
   }
 
-  .col3 {
-    grid-column: 7/9;
-  }
-
-  .col4 {
-    grid-column: 9/11;
-  }
-
-  .col5 {
-    grid-column: 12/13;
-
-    div {
+  &__logo {
+    > div {
       @include flex(row, center, center, 10px);
+      text-align: left;
+    }
+
+    @include laptop13 {
+      margin-left: auto;
     }
 
     h3 {
       color: $white;
+      font-size: 25px;
+      margin: 0;
+    }
+
+    p {
+      color: $gray-light-2;
+      margin: 0;
     }
   }
 
@@ -35,7 +47,7 @@
     font-family: avenir-light, sans-serif;
     display: block;
     color: $gray-light-2;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     font-size: 14px;
     @include transition;
 
@@ -46,5 +58,17 @@
 
   img {
     width: 50px;
+  }
+
+  &__bottom {
+    padding: 5px 0;
+    background: $black;
+    grid-column: 1/-1;
+    grid-row: 2;
+    p {
+      color: $gray-light-2;
+      text-align: center;
+      font-size: 13px;
+    }
   }
 }
