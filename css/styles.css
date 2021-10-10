@@ -743,6 +743,10 @@ a {
   grid-column: 3/7;
 }
 
+.aips__img img {
+  width: 100%;
+}
+
 .aips__text {
   grid-column: 8/-2;
   padding: 10%;

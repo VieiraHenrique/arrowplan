@@ -16,6 +16,9 @@
 
   &__img {
       grid-column: 3/7;
+      img {
+          width: 100%;
+      }
   }
   &__text {
       grid-column: 8/-2;
