@@ -720,7 +720,7 @@ a {
 .aips {
   display: grid;
   grid-template-columns: [full-start] minmax(20px, 1fr) [container-start] repeat(12, [col-start] minmax(22px, 120px) [col-end]) [container-end] minmax(20px, 1fr) [full-end];
-  margin-top: 0;
+  margin-top: 50px;
   margin-bottom: 70px;
   padding-top: 30px;
   padding-bottom: 30px;
