@@ -1,6 +1,6 @@
 .aips {
   @include container;
-  @include separator(50px, 70px, 30px, 30px);
+  @include separator(0, 70px, 30px, 30px);
   align-items: center;
 
   background-image: linear-gradient(to left, rgba($black, 1), rgba($black, 1));

@@ -23,7 +23,7 @@
           </div>
         </div>
         <div class="header__menu">
-          <a href="/arrowplan"
+          <a href="/"
             ><i class="fas fa-long-arrow-alt-left"></i> Back to Arrowplan
             website</a
           >

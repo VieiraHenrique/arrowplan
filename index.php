@@ -38,7 +38,7 @@
             <li><a href="#links">Links</a></li>
             <li>
               <a
-                href="cloud-office.html"
+                href="cloud-office.php"
                 class="cloud"
                 target="blank"
                 class="btn"
