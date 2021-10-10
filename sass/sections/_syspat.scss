@@ -1,6 +1,6 @@
 .syspat {
   @include container;
-  @include separator(70px, 70px, 0, 0);
+  @include separator(70px, 0, 0, 0);
   background-image: linear-gradient( to right,
       rgba($color-primary, 1),
       rgba($color-primary, 1)

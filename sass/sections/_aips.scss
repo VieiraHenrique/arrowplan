@@ -1,0 +1,34 @@
+.aips {
+  @include container;
+  @include separator(0, 70px, 30px, 30px);
+  align-items: center;
+
+  background-image: linear-gradient(to left, rgba($black, 1), rgba($black, 1));
+
+  @include laptop13 {
+    background-image: linear-gradient(
+      to left,
+      rgba($black, 1),
+      rgba($black, 0.85)
+    ), url('https://vieirahenrique.github.io/arrowplan/img/electric.jpg');
+    background-size: cover;
+  }
+
+  &__img {
+      grid-column: 3/7;
+  }
+  &__text {
+      grid-column: 8/-2;
+      padding: 10%;
+      color: $white;
+
+      h3 {
+          font-size: 30px;
+          line-height: 1.1;
+      }
+
+      p {
+          color: $gray-light-2;
+      }
+  }
+}

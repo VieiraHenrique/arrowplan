@@ -667,7 +667,7 @@ a {
   display: grid;
   grid-template-columns: [full-start] minmax(20px, 1fr) [container-start] repeat(12, [col-start] minmax(22px, 120px) [col-end]) [container-end] minmax(20px, 1fr) [full-end];
   margin-top: 70px;
-  margin-bottom: 70px;
+  margin-bottom: 0;
   padding-top: 0;
   padding-bottom: 0;
   background-image: linear-gradient(to right, #236eac, #236eac), url("https://vieirahenrique.github.io/arrowplan/img/bg2.jpg");
@@ -714,6 +714,48 @@ a {
   .syspat__text {
     grid-column: 1/9;
   }
+}
+
+.aips {
+  display: grid;
+  grid-template-columns: [full-start] minmax(20px, 1fr) [container-start] repeat(12, [col-start] minmax(22px, 120px) [col-end]) [container-end] minmax(20px, 1fr) [full-end];
+  margin-top: 0;
+  margin-bottom: 70px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  align-items: center;
+  background-image: linear-gradient(to left, black, black);
+}
+
+.aips > * {
+  grid-column: container-start / container-end;
+  grid-row: 1;
+}
+
+@media screen and (min-width: 1280px) {
+  .aips {
+    background-image: linear-gradient(to left, black, rgba(0, 0, 0, 0.85)), url("https://vieirahenrique.github.io/arrowplan/img/electric.jpg");
+    background-size: cover;
+  }
+}
+
+.aips__img {
+  grid-column: 3/7;
+}
+
+.aips__text {
+  grid-column: 8/-2;
+  padding: 10%;
+  color: #fff;
+}
+
+.aips__text h3 {
+  font-size: 30px;
+  line-height: 1.1;
+}
+
+.aips__text p {
+  color: #dadada;
 }
 
 .about {
