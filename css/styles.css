@@ -712,7 +712,8 @@ a {
 
 @media screen and (min-width: 768px) {
   .syspat__text {
-    grid-column: 1/9;
+    grid-column: 2/9;
+    padding: 10% 0;
   }
 }
 
@@ -740,15 +741,22 @@ a {
 }
 
 .aips__img {
-  grid-column: 3/7;
+  grid-column: 2/-2;
 }
 
 .aips__img img {
   width: 100%;
 }
 
+@media screen and (min-width: 1280px) {
+  .aips__img {
+    grid-column: 3/7;
+  }
+}
+
 .aips__text {
-  grid-column: 8/-2;
+  grid-column: 2/-2;
+  grid-row: 2;
   padding: 10%;
   color: #fff;
 }
@@ -760,6 +768,13 @@ a {
 
 .aips__text p {
   color: #dadada;
+}
+
+@media screen and (min-width: 1280px) {
+  .aips__text {
+    grid-column: 8/-2;
+    grid-row: 1;
+  }
 }
 
 .about {
