@@ -24,7 +24,7 @@
     padding: 10%;
     display: grid;
     place-items: center;
-    text-align: left;
+    text-align: center;
 
     h2 {
       color: $white;
@@ -34,6 +34,7 @@
       line-height: 1.1;
       color: $gray-light-1;
       font-size: 30px;
+      margin: 20px 0;
     }
 
     p {
@@ -43,6 +44,7 @@
     @include ipad {
       grid-column: 2/9;
       padding: 10% 0;
+      text-align: left;
     }
   }
 }

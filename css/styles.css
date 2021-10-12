@@ -132,7 +132,7 @@ h2 {
   }
 }
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1440px) {
   h2 {
     font-size: 45px;
     line-height: 1.5;
@@ -151,7 +151,7 @@ h3 {
   }
 }
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1440px) {
   h3 {
     font-size: 22px;
     line-height: 1.5;
@@ -228,6 +228,14 @@ a {
 
 .noscroll {
   overflow: hidden;
+}
+
+.alert {
+  color: red;
+  margin: 0;
+  margin-bottom: 5px;
+  text-align: left !important;
+  line-height: 1;
 }
 
 #syspat, #about, #services, #press, #contact, #links {
@@ -378,6 +386,12 @@ a {
 .header > * {
   grid-column: container-start / container-end;
   grid-row: 1;
+}
+
+@media screen and (min-width: 1280px) {
+  .header {
+    visibility: none;
+  }
 }
 
 .header .wrapper {
@@ -693,7 +707,7 @@ a {
   padding: 10%;
   display: grid;
   place-items: center;
-  text-align: left;
+  text-align: center;
 }
 
 .syspat__text h2 {
@@ -704,6 +718,7 @@ a {
   line-height: 1.1;
   color: #f3f3f3;
   font-size: 30px;
+  margin: 20px 0;
 }
 
 .syspat__text p {
@@ -714,7 +729,51 @@ a {
   .syspat__text {
     grid-column: 2/9;
     padding: 10% 0;
+    text-align: left;
   }
+}
+
+.effatha {
+  display: grid;
+  grid-template-columns: [full-start] minmax(20px, 1fr) [container-start] repeat(12, [col-start] minmax(22px, 120px) [col-end]) [container-end] minmax(20px, 1fr) [full-end];
+  background-size: cover;
+  background-position: center center;
+}
+
+.effatha > * {
+  grid-column: container-start / container-end;
+  grid-row: 1;
+}
+
+@media screen and (min-width: 1280px) {
+  .effatha {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url("/arrowplan/img/waves.png");
+    background-size: contain;
+  }
+}
+
+.effatha__text {
+  margin: 0 auto;
+  min-height: 50vh;
+  max-width: 800px;
+  padding: 5%;
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(20px);
+}
+
+.effatha__text h2 {
+  text-align: center;
+}
+
+.effatha__text h3 {
+  line-height: 1.1;
+  font-size: 30px;
+  text-align: center;
+  margin: 30px 0;
+}
+
+.effatha__text p {
+  text-align: center;
 }
 
 .aips {
@@ -750,30 +809,37 @@ a {
 
 @media screen and (min-width: 1280px) {
   .aips__img {
-    grid-column: 3/7;
+    grid-column: 3/8;
   }
 }
 
 .aips__text {
   grid-column: 2/-2;
   grid-row: 2;
-  padding: 10%;
+  padding: 5%;
   color: #fff;
+  text-align: center;
 }
 
 .aips__text h3 {
   font-size: 30px;
   line-height: 1.1;
+  margin: 30px 0;
 }
 
 .aips__text p {
   color: #dadada;
+  text-align: center;
 }
 
 @media screen and (min-width: 1280px) {
   .aips__text {
     grid-column: 8/-2;
     grid-row: 1;
+    text-align: left;
+  }
+  .aips__text p {
+    text-align: left;
   }
 }
 

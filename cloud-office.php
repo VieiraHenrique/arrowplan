@@ -38,8 +38,8 @@
       <div class="main__offices">
         <div class="room">
           <div>
-            <h2>General Meeting</h2>
-            <h3>CEO of Arrowplan</h3>
+            <h2>Paulo Vieira</h2>
+            <h3>President and CEO</h3>
             <a
               href="https://zoom.us/j/2444567890?pwd=MHZRZW15d2YwNWw3dUtYWEI1TXB0QT09"
               ><i class="fas fa-sign-in-alt"></i> Enter room</a
@@ -49,7 +49,7 @@
         <div class="room">
           <div>
             <h2>Paulo Vieira</h2>
-            <h3>CEO of Arrowplan</h3>
+            <h3>CTO</h3>
             <a
               href="https://zoom.us/j/2444567890?pwd=MHZRZW15d2YwNWw3dUtYWEI1TXB0QT09"
               ><i class="fas fa-sign-in-alt"></i> Enter room</a
@@ -59,7 +59,7 @@
         <div class="room">
           <div>
             <h2>Manoel</h2>
-            <h3>CEO of Arrowplan</h3>
+            <h3>CFO</h3>
             <a
               href="https://zoom.us/j/2444567890?pwd=MHZRZW15d2YwNWw3dUtYWEI1TXB0QT09"
               ><i class="fas fa-sign-in-alt"></i> Enter room</a
@@ -69,7 +69,7 @@
         <div class="room">
           <div>
             <h2>Marcio</h2>
-            <h3>CEO of Arrowplan</h3>
+            <h3>CLO</h3>
             <a
               href="https://zoom.us/j/2444567890?pwd=MHZRZW15d2YwNWw3dUtYWEI1TXB0QT09"
               ><i class="fas fa-sign-in-alt"></i> Enter room</a
@@ -79,7 +79,7 @@
         <div class="room">
           <div>
             <h2>Igor</h2>
-            <h3>CEO of Arrowplan</h3>
+            <h3>CMO</h3>
             <a
               href="https://zoom.us/j/2444567890?pwd=MHZRZW15d2YwNWw3dUtYWEI1TXB0QT09"
               ><i class="fas fa-sign-in-alt"></i> Enter room</a
@@ -89,7 +89,17 @@
 
         <div class="room">
           <div>
-            <h2>General Meeting</h2>
+            <h2>SysPat</h2>
+            <h3>Social and Philantropy</h3>
+            <a
+              href="https://zoom.us/j/2444567890?pwd=MHZRZW15d2YwNWw3dUtYWEI1TXB0QT09"
+              ><i class="fas fa-sign-in-alt"></i> Enter room</a
+            >
+          </div>
+        </div>
+        <div class="room">
+          <div>
+            <h2>Meeting Room 1</h2>
             <h3>CEO of Arrowplan</h3>
             <a
               href="https://zoom.us/j/2444567890?pwd=MHZRZW15d2YwNWw3dUtYWEI1TXB0QT09"
@@ -99,7 +109,7 @@
         </div>
         <div class="room">
           <div>
-            <h2>General Meeting</h2>
+            <h2>Meeting Room 2</h2>
             <h3>CEO of Arrowplan</h3>
             <a
               href="https://zoom.us/j/2444567890?pwd=MHZRZW15d2YwNWw3dUtYWEI1TXB0QT09"

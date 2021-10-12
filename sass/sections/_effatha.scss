@@ -1,0 +1,35 @@
+.effatha {
+  @include container;
+  background-size: cover;
+  background-position: center center;
+
+  @include laptop13 {
+    background-image: linear-gradient(rgba($white, 0.5), rgba($white, 0.5)),
+      url("/arrowplan/img/waves.png");
+    background-size: contain;
+  }
+
+  &__text {
+    margin: 0 auto;
+    min-height: 50vh;
+    max-width: 800px;
+    padding: 5%;
+
+    background: rgba($color: $white, $alpha: 0.7);
+    backdrop-filter: blur(20px);
+    h2 {
+      text-align: center;
+    }
+
+    h3 {
+      line-height: 1.1;
+      font-size: 30px;
+      text-align: center;
+      margin: 30px 0;
+    }
+
+    p {
+      text-align: center;
+    }
+  }
+}

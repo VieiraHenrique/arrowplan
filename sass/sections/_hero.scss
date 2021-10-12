@@ -6,12 +6,12 @@
   background-repeat: no-repeat;
   background-size: contain;
   text-align: center;
-  
+
   @include laptop13 {
     background-position: center right -550px;
     text-align: left;
     padding: 100px 0;
-    background-image: url('https://vieirahenrique.github.io/arrowplan/img/world6.png');
+    background-image: url("https://vieirahenrique.github.io/arrowplan/img/world6.png");
   }
 
   @include laptop {
@@ -30,7 +30,7 @@
     grid-column: 2/-2;
 
     @include laptop13 {
-        grid-column: 2/8;
+      grid-column: 2/8;
     }
   }
 
@@ -43,15 +43,13 @@
     place-items: center;
 
     #world {
-        width: 200%;
-        height: 200%;
+      width: 200%;
+      height: 200%;
     }
 
     @include laptop13 {
-        grid-row: 1;
-        grid-column: 9/-2;
+      grid-row: 1;
+      grid-column: 9/-2;
     }
-
-    
   }
 }

@@ -59,7 +59,7 @@
           Marketing ideas, whether they are physically enveloped by a product or
           not, is our main concern.
         </p>
-        <p>
+        <p class="paragraph">
           In this respect intelligence is crucial and strategy becomes the most
           important intentional play for any business. We are there again with
           long term acquired expertise in particular in the fields of technology
@@ -187,21 +187,35 @@
       </div>
     </section>
 
+    <section class="effatha">
+      <div class="effatha__text">
+        <h2>EFFATHA</h2>
+        <h3>Wave technology for shaping the future</h3>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum illo consequatur cupiditate deleniti placeat, fugiat fugit quo voluptatem necessitatibus sit laudantium? Itaque, excepturi quisquam?
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis commodi asperiores praesentium, suscipit non minus quo illum quam.
+        </p>
+      </div>
+    </section>
+
     <section class="aips">
       <div class="aips__img">
         <img src="img/burned_money.png" alt="aips">
       </div>
       <div class="aips__text">
-        <h2>AIPS</h2>
-        <h3>Burning money for crime dissuasion</h3>
+        <h2>Dissuasion Technologies</h2>
+        <h3>ATM Intelligent Protection System (AIPS)</h3>
         <p>
-          AIPS is a technology Lorem ipsum, dolor sit amet consectetur
-          adipisicing elit. Necessitatibus!
+        Dissuasion means creating a “consistent game” where robbers best response is not attacking. </p>
+        <p> We prevent crime by dissuading criminals.
         </p>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, alias
-          vel in deleniti quos vero ad nulla unde dignissimos officiis expedita
-          corrupti similique molestias.
+        Notice that there is a focus on convincing potential criminals of the consistency of the new game first. It is a focus on the human factor.
+        </p>
+        <p>
+        An example of dissuasion technology is the AIPS, which detects by electronic means a robbery in a ATM or money transport box, and does a controlled and irreversible burning destruction on the money. It loses its value but may be exchanged by central banks to its legitimate owner.
         </p>
       </div>
     </section>
@@ -211,6 +225,7 @@
     <section class="about">
       <div class="about__text">
         <h2>About Us</h2>
+        <div class="history">
         <h3>History</h3>
         <p>
           Arrowplan is a company founded in 1995 in Belgium, in the heart of
@@ -224,6 +239,8 @@
           between Europe and Latin America, and started several new projects
           specifically constructed to the Brazilian continental market.
         </p>
+        </div>
+        <div class="organization">
         <h3>Organization</h3>
         <p>
           Since the beginning the company was organized as a network: the
@@ -235,6 +252,8 @@
           Arrowplan and follow very strictly deontology principles to deal with
           our prime matter: Information.
         </p>
+        </div>
+        <div class="future">
         <h3>From now to the Future</h3>
         <p>
           Today we are present in several sectors like health, information
@@ -245,6 +264,7 @@
           supporting the creation of an innovation culture based on Intellectual
           Property and on empowering creative people.
         </p>
+        </div>
       </div>
     </section>
 
@@ -340,15 +360,19 @@
       <div class="wrapper">
         <h2>Contact</h2>
         <p>We will be glad to answer your questions and comments.</p>
-        <form action="#">
-          <input type="text" placeholder="Name" />
-          <input type="email" placeholder="Email" />
-          <input type="text" placeholder="Company" />
-          <textarea rows="5" placeholder="Message"></textarea>
-          <button type="submit">Send message</button>
+        <form action="form.php" method="POST">
+          <input required type="text" name="name" placeholder="Name*" />
+          <p class="alert">This field is required</p>
+          <input required type="email" name="email" placeholder="Email*" />
+          <p class="alert">This field is required</p>
+          <input type="text" name="company" placeholder="Company" />
+          <textarea required rows="5" name="message" placeholder="Message*"></textarea>
+          <p class="alert">This field is required</p>
+          <button type="submit" name="submit">Send message</button>
         </form>
       </div>
     </section>
+
 
     <div id="links"></div>
 
@@ -529,6 +553,9 @@
       </div>
     </footer>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/ScrollTrigger.min.js"></script>
+    <script src="js/sections/gsap.js"></script>
     <script src="js/libraries/accordion.js"></script>
     <script src="js/sections/menu.js"></script>
     <script src="js/app.js"></script>
