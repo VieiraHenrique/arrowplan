@@ -136,17 +136,5 @@ window.addEventListener("load", () => {
       },
     });
 
-    gsap.from(".effatha__text", {
-      autoAlpha: 0,
-      duration: 2,
-      ease: "power4.out",
-      stagger: {
-        each: 0.5,
-      },
-      scrollTrigger: {
-        trigger: ".effatha__text",
-        start: "top 80%",
-      },
-    });
   }
 });

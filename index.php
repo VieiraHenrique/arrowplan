@@ -11,6 +11,7 @@
     />
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="icon" type="image/png" href="img/1x/logo3.png" />
+    
   </head>
   <body>
     <header class="header">
@@ -30,7 +31,7 @@
           <label for="toggle" class="hamburger"><span></span></label>
           <ul class="header__nav--menu">
             <li><a href="#">Home</a></li>
-            <li><a href="#syspat">SysPat</a></li>
+            <li><a href="#syspat">Featured projects</a></li>
             <li><a href="#about">About us</a></li>
             <li><a href="#services">Our services</a></li>
             <li><a href="#press">Press</a></li>
@@ -187,20 +188,7 @@
       </div>
     </section>
 
-    <section class="effatha">
-      <div class="effatha__text">
-        <h2>EFFATHA</h2>
-        <h3>Wave technology for shaping the future</h3>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum illo consequatur cupiditate deleniti placeat, fugiat fugit quo voluptatem necessitatibus sit laudantium? Itaque, excepturi quisquam?
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis commodi asperiores praesentium, suscipit non minus quo illum quam.
-        </p>
-      </div>
-    </section>
-
-    <section class="aips">
+   <section class="aips">
       <div class="aips__img">
         <img src="img/burned_money.png" alt="aips">
       </div>
@@ -355,24 +343,27 @@
     </section>
 
     <div id="contact"></div>
-
+<!-- 
     <section class="contact">
       <div class="wrapper">
         <h2>Contact</h2>
         <p>We will be glad to answer your questions and comments.</p>
         <form action="form.php" method="POST">
           <input required type="text" name="name" placeholder="Name*" />
-          <p class="alert">This field is required</p>
           <input required type="email" name="email" placeholder="Email*" />
-          <p class="alert">This field is required</p>
           <input type="text" name="company" placeholder="Company" />
           <textarea required rows="5" name="message" placeholder="Message*"></textarea>
-          <p class="alert">This field is required</p>
           <button type="submit" name="submit">Send message</button>
         </form>
       </div>
-    </section>
+    </section> -->
 
+
+
+
+
+
+    <!-- ////////////////////////////// -->
 
     <div id="links"></div>
 
@@ -559,5 +550,6 @@
     <script src="js/libraries/accordion.js"></script>
     <script src="js/sections/menu.js"></script>
     <script src="js/app.js"></script>
+
   </body>
 </html>

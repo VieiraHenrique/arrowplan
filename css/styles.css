@@ -388,12 +388,6 @@ a {
   grid-row: 1;
 }
 
-@media screen and (min-width: 1280px) {
-  .header {
-    visibility: none;
-  }
-}
-
 .header .wrapper {
   height: 100%;
   display: flex;
@@ -1379,6 +1373,7 @@ a {
   grid-column: 1/7;
   min-height: calc(100vh - 120px);
   background: url("https://vieirahenrique.github.io/arrowplan/img/bg.png");
+  background-size: cover;
 }
 
 @media screen and (min-width: 1280px) {

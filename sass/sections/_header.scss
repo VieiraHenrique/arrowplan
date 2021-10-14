@@ -10,9 +10,6 @@
   width: 100%;
   z-index: 9999999;
   
-  @include laptop13 {
-    visibility: none;
-  }
 
   .wrapper {
     height: 100%;

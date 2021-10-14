@@ -7,13 +7,14 @@
     grid-column: 1/7;
     min-height: calc(100vh - 120px);
     background: url("https://vieirahenrique.github.io/arrowplan/img/bg.png");
-
+    background-size: cover;
     @include laptop13 {
       display: block;
     }
   }
 
   &__offices {
+    
     padding: 20px;
     grid-column: 2/-2;
     @include grid(1fr);

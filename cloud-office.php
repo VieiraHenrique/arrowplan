@@ -38,8 +38,8 @@
       <div class="main__offices">
         <div class="room">
           <div>
-            <h2>Paulo Vieira</h2>
-            <h3>President and CEO</h3>
+            <h2>President and CEO</h2>
+            <h3>Paulo Coelho Vieira</h3>
             <a
               href="https://zoom.us/j/2444567890?pwd=MHZRZW15d2YwNWw3dUtYWEI1TXB0QT09"
               ><i class="fas fa-sign-in-alt"></i> Enter room</a
@@ -48,8 +48,8 @@
         </div>
         <div class="room">
           <div>
-            <h2>Paulo Vieira</h2>
-            <h3>CTO</h3>
+            <h2>CTO</h2>
+            <h3>Chief Technical Officer</h3>
             <a
               href="https://zoom.us/j/2444567890?pwd=MHZRZW15d2YwNWw3dUtYWEI1TXB0QT09"
               ><i class="fas fa-sign-in-alt"></i> Enter room</a
@@ -58,8 +58,8 @@
         </div>
         <div class="room">
           <div>
-            <h2>Manoel</h2>
-            <h3>CFO</h3>
+            <h2>CFO</h2>
+            <h3>Chief Financial Officer</h3>
             <a
               href="https://zoom.us/j/2444567890?pwd=MHZRZW15d2YwNWw3dUtYWEI1TXB0QT09"
               ><i class="fas fa-sign-in-alt"></i> Enter room</a
@@ -68,8 +68,8 @@
         </div>
         <div class="room">
           <div>
-            <h2>Marcio</h2>
-            <h3>CLO</h3>
+            <h2>CLO</h2>
+            <h3>Chief Learning Officer</h3>
             <a
               href="https://zoom.us/j/2444567890?pwd=MHZRZW15d2YwNWw3dUtYWEI1TXB0QT09"
               ><i class="fas fa-sign-in-alt"></i> Enter room</a
@@ -78,8 +78,8 @@
         </div>
         <div class="room">
           <div>
-            <h2>Igor</h2>
-            <h3>CMO</h3>
+            <h2>CMO</h2>
+            <h3>Chief Marketing Officer</h3>
             <a
               href="https://zoom.us/j/2444567890?pwd=MHZRZW15d2YwNWw3dUtYWEI1TXB0QT09"
               ><i class="fas fa-sign-in-alt"></i> Enter room</a
