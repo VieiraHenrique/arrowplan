@@ -343,7 +343,7 @@
     </section>
 
     <div id="contact"></div>
-<!-- 
+
     <section class="contact">
       <div class="wrapper">
         <h2>Contact</h2>
@@ -356,14 +356,7 @@
           <button type="submit" name="submit">Send message</button>
         </form>
       </div>
-    </section> -->
-
-
-
-
-
-
-    <!-- ////////////////////////////// -->
+    </section>
 
     <div id="links"></div>
 
